@@ -6,7 +6,8 @@ export default function CurrencyConverter(props) {
     currentCurrency,
     onChangeCurrency,
     onChangeAmount,
-    amount
+    amount,
+    
   }=props;
   const optionsList = l;
   // console.log(optionsList);
