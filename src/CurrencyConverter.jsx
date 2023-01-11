@@ -13,8 +13,9 @@ export default function CurrencyConverter(props) {
   // console.log(optionsList);
   let euroCount=0;
   return (
-    <div>
+    <div className='input_container'>
       <input type="number" className='input' value={amount} onChange={onChangeAmount}></input>
+      <div className='select_container'>
       <select value={currentCurrency} onChange={onChangeCurrency}>
         {
           optionsList.map((listItem)=>{
@@ -29,6 +30,7 @@ export default function CurrencyConverter(props) {
         }
           
       </select>
+      </div>
     </div>
   )
 }

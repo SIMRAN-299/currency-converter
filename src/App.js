@@ -56,9 +56,9 @@ function App() {
     setAmountInFromCurrency(false);
   }
   return (
-    <>
+    <div className='main_container'>
 
-      <h1>Converter</h1>
+      <h1 className="font-effect-shadow-multiple">Converter</h1>
       <CurrencyConverter 
           l={currentOptions}
           currentCurrency={fromCurrency}
@@ -75,7 +75,7 @@ function App() {
           amount={toAmount}
           onChangeAmount={handleToChange}
       ></CurrencyConverter>
-    </>
+    </div>
     
   );
 }
